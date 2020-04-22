@@ -10,13 +10,14 @@ class CategoriesScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Vamos cozinhar?'),
       ),
-          body: GridView(
+      body: GridView(
+        padding: const EdgeInsets.all(25),
         //faz um grid com rolagem vertical
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           //limita o tamanho de 200 pra cada elemento
           maxCrossAxisExtent: 200,
           //define a proporção, se ele é mais largo, quadrado...
-          childAspectRatio: 3/2,
+          childAspectRatio: 3 / 2,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
